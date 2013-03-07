@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Black Box, White Cube, Blue Screen | Sokoban</title>
+
+<link rel="stylesheet" href="css/sokoban.css" />
+
+<script src="js/firebug/firebug.js" type="text/javascript" language="javascript"></script>
+<script src="js/jquery-1.2.3.pack.js" type="text/javascript" language="javascript"></script>
+<script src="js/jqModal.js" type="text/javascript" language="javascript"></script>
+<script src="js/sokoban.js" type="text/javascript" language="javascript"></script>
+
+<style type="text/css">
+#divGameHolder{
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-150px;
+	height:200px;
+	width:300px;
+}
+</style>
+
+
+
+</head>
+<body>
+	<div class="jqmWindow" id="dialog">
+		<h1>Gratulation!</h1>
+		<p>Sie haben es geschafft. Dies war der letzte Level.</p>
+	</div>
+	<div id="divGameHolder">
+		<div id="divPlayer" style="bottom:100px; left:140px;">
+			<img src="img/player.gif" alt="player" height="100%" width="100%" />		</div>
+		<div class="cube" style="bottom:160px; left:40px;"></div>
+		<div class="cube" style="bottom:140px; left:40px;"></div>
+		<div class="cube" style="bottom:120px; left:40px;"></div>
+		<div class="cube" style="bottom:80px; left:20px;"></div>
+		<div class="cube" style="bottom:100px; left:40px;"></div>
+		<div class="cube" style="bottom:80px; left:40px;"></div>
+		<div class="cube" style="bottom:160px; left:20px;"></div>
+		<div class="cube" style="bottom:140px; left:20px;"></div>
+		<div class="cube" style="bottom:120px; left:20px;"></div>
+		<div class="cube" style="bottom:100px; left:20px;"></div>
+		<div class="wall" style="bottom:180px; left:60px;"></div>
+		<div class="wall" style="bottom:140px; left:0px;"></div>
+		<div class="wall" style="bottom:60px; left:40px;"></div>
+		<div class="wall" style="bottom:40px; left:40px;"></div>
+		<div class="wall" style="bottom:0px; left:40px;"></div>
+		<div class="wall" style="bottom:20px; left:40px;"></div>
+		<div class="wall" style="bottom:140px; left:0px;"></div>
+		<div class="wall" style="bottom:160px; left:0px;"></div>
+		<div class="wall" style="bottom:180px; left:0px;"></div>
+		<div class="wall" style="bottom:180px; left:40px;"></div>
+		<div class="wall" style="bottom:180px; left:20px;"></div>
+	  <div class="wall" style="bottom:180px; left:80px;"></div>
+		<div class="wall" style="bottom:180px; left:100px;"></div>
+		<div class="wall" style="bottom:180px; left:120px;"></div>
+		<div class="wall" style="bottom:100px; left:260px;"></div>
+		<div class="wall" style="bottom:80px; left:260px;"></div>
+		<div class="wall" style="bottom:60px; left:260px;"></div>
+		<div class="wall" style="bottom:140px; left:260px;"></div>
+		<div class="wall" style="bottom:180px; left:180px;"></div>
+	  <div class="wall" style="bottom:180px; left:160px;"></div>
+	  <div class="wall" style="bottom:180px; left:140px;"></div>
+		<div class="wall" style="bottom:180px; left:200px;"></div>
+		<div class="wall" style="bottom:120px; left:260px;"></div>
+		<div class="wall" style="bottom:180px; left:220px;"></div>
+		<div class="wall" style="bottom:0px; left:60px;"></div>
+		<div class="wall" style="bottom:120px; left:0px;"></div>
+		<div class="wall" style="bottom:100px; left:0px;"></div>
+		<div class="wall" style="bottom:60px; left:20px;"></div>
+		<div class="wall" style="bottom:60px; left:0px;"></div>
+		<div class="wall" style="bottom:80px; left:0px;"></div>
+		<div class="wall" style="bottom:160px; left:260px;"></div>
+	  <div class="wall" style="bottom:160px; left:220px;"></div>
+		<div class="wall" style="bottom:160px; left:240px;"></div>
+		<div class="wall" style="bottom:0px; left:140px;"></div>
+		<div class="wall" style="bottom:0px; left:100px;"></div>
+		<div class="wall" style="bottom:0px; left:120px;"></div>
+		<div class="wall" style="bottom:0px; left:160px;"></div>
+		<div class="wall" style="bottom:0px; left:180px;"></div>
+		<div class="wall" style="bottom:0px; left:240px;"></div>
+	  <div class="wall" style="bottom:0px; left:200px;"></div>
+	  <div class="wall" style="bottom:0px; left:220px;"></div>
+		<div class="wall" style="bottom:0px; left:260px;"></div>
+		<div class="wall" style="bottom:20px; left:260px;"></div>
+		<div class="wall" style="bottom:40px; left:260px;"></div>
+		<div class="wall" style="bottom:60px; left:60px;"></div>
+		<div class="wall" style="bottom:120px; left:100px;"></div>
+		<div class="wall" style="bottom:60px; left:160px;"></div>
+		<div class="wall" style="bottom:80px; left:140px;"></div>
+		<div class="wall" style="bottom:60px; left:140px;"></div>
+		<div class="wall" style="bottom:20px; left:140px;"></div>
+		<div class="wall" style="bottom:80px; left:240px;"></div>
+		<div class="wall" style="bottom:100px; left:180px;"></div>
+		<div class="wall" style="bottom:100px; left:200px;"></div>
+		<div class="wall" style="bottom:120px; left:200px;"></div>
+		<div class="wall" style="bottom:120px; left:180px;"></div>
+		<div class="wall" style="bottom:120px; left:160px;"></div>
+		<div class="wall" style="bottom:120px; left:140px;"></div>
+		<div class="wall" style="bottom:160px; left:100px;"></div>
+		<div class="wall" style="bottom:140px; left:100px;"></div>
+		<div class="wall" style="bottom:80px; left:100px;"></div>
+		<div class="wall" style="bottom:60px; left:100px;"></div>
+		<div class="wall" style="bottom:60px; left:80px;"></div>
+		<div class="wall" style="bottom:0px; left:80px;"></div>
+		<div class="box" style="bottom:40px; left:140px;"></div>
+		<div class="box" style="bottom:120px; left:120px;"></div>
+		<div class="box" style="bottom:140px; left:140px;"></div>
+		<div class="box" style="bottom:140px; left:200px;"></div>
+		<div class="box" style="bottom:40px; left:220px;"></div>
+		<div class="box" style="bottom:60px; left:220px;"></div>
+		<div class="box" style="bottom:80px; left:200px;"></div>
+		<div class="box" style="bottom:40px; left:180px;"></div>
+		<div class="box" style="bottom:40px; left:80px;"></div>
+		<div class="box" style="bottom:60px; left:180px;"></div>
+		<div class="floor" style="bottom:60px; left:0px; height:120px; width:40px"></div>
+		<div class="floor" style="bottom:0px; left:40px; height:180px; width:240px"></div>
+	</div>
+</body>
+</html>
